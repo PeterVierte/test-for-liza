@@ -1,0 +1,123 @@
+.firstItem {
+  border-radius: 12px;
+  border: 1px solid #F4F4F4;
+  background: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 25px;
+
+  & > img {
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & > .info {
+    margin-top: 24px;
+    padding: 0 16px 32px 16px;
+  }
+
+}
+
+.item {
+  width: calc(100% / 2 - 25px);
+  margin-top: 25px;
+  margin-left: 25px;
+
+  border-radius: 12px;
+  border: 1px solid #F4F4F4;
+  background: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  & > h1 {
+    width: fit-content;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.likeBtns {
+  display: flex;
+  gap:20px;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & > img {
+      filter: invert(18%) sepia(13%) saturate(663%) hue-rotate(223deg) brightness(96%) contrast(87%);
+      cursor: pointer;
+    }
+  }
+}
+
+.text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 14px 24px;
+
+  border-radius: 60px;
+  border: 2px solid #0A0A0A;
+  background: #FFF;
+  transition: opacity .3s linear;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.itemInfo {
+  padding: 24px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.itemTitle {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.itemBottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeBtn {
+  filter: invert(63%) sepia(89%) saturate(6626%) hue-rotate(132deg) brightness(96%) contrast(74%) !important;
+}
+
+.dislikeBtn {
+  filter: invert(40%) sepia(40%) saturate(3193%) hue-rotate(334deg) brightness(107%) contrast(84%) !important;
+}
+
+@media (max-width: 991px) {
+  .item {
+    width: calc(100% - 25px);
+  }
+}

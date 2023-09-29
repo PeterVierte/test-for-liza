@@ -1,10 +1,9 @@
 import React from 'react';
+import OnePost from "../components/OnePost/OnePost";
 
 const PostPage = () => {
     return (
-        <div>
-            <h1>Один пост</h1>
-        </div>
+        <OnePost/>
     );
 };
 

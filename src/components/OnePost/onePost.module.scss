@@ -1,0 +1,70 @@
+.root {
+  margin-top: 60px;
+}
+
+.linkBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likeBtns {
+  display: flex;
+  gap:20px;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & > img {
+      filter: invert(18%) sepia(13%) saturate(663%) hue-rotate(223deg) brightness(96%) contrast(87%);
+      cursor: pointer;
+    }
+  }
+}
+
+.likeBtn {
+  filter: invert(63%) sepia(89%) saturate(6626%) hue-rotate(132deg) brightness(96%) contrast(74%) !important;
+}
+
+.dislikeBtn {
+  filter: invert(40%) sepia(40%) saturate(3193%) hue-rotate(334deg) brightness(107%) contrast(84%) !important;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  & > h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+
+}
+
+.postWrapper {
+  padding: 0 100px;
+
+  & > img {
+    object-fit: cover;
+    margin-bottom: 50px;  }
+
+  & > div {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
